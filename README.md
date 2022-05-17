@@ -1,3 +1,59 @@
+
+
+# **Personal Portfolio**
+  
+## **The Repository**
+#### GitHub: https://github.com/loriful/portfolio
+
+## **Deployment**
+#### https://loriful.github.io/portfolio
+
+
+## **Description**
+Personal portfolio built with MERN stack
+
+Practice: 
+  - JavaScript
+  - JSX
+  - MongoDB
+  - Express
+  - React - Single-page app with reusable UI components, state, propos, and hooks
+  - Node
+  - Jest
+
+  <!-- - IndexDB API
+  - Progressive Web Applications
+  - Manifest.json
+  - Service workers -->
+
+## **Table of Contents**
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+
+## **The Site View**
+
+<p align="center">
+  <img src="./public/images/mock-up.png" alt="Web Page Mock-Up">
+  </b>
+  </b>
+</p>
+
+## **Installation**
+- Requires Node and MongoDB, and npm packages Express and Mongoose
+- Deployed to Heroku for testing and use
+
+## **Usage**
+- 
+
+## **Questions**
+### Github Profile:  https://github.com/loriful
+
+### You may contact tiptonica@gmail.com with any questions related to this repository.
+
+  
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
