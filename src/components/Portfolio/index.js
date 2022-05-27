@@ -47,16 +47,20 @@ function Portfolio() {
       <h1>Portfolio</h1>
        <div className="flex-row">
         <div className="container">
-  
+        {/* <div class="image image-3">
+          <a href="https://loriful.github.io/bang-the-drum/" target="_blank">
+          <img src="./assets/images/proj1.png" alt="Screen shot of weather & history app"/></a>
+          <div class="img-txt">
+            <h3>Historical Weather</h3>
+            <h4>Team Project:  HTML, Bootstrap CSS, JavaScript, Third Party APIs<h4>
+          </div>
+        </div> */}
+
           <h4>Project Description</h4>
-         
-         {/* {ProjectBucket.map(image => return ( */}
-          {/* <div style={{flex: 1, justifyContent: 'top', alignItems: 'left', marginTop: 20}}> */}
-          {/* <h4 style={{position: 'absolute', marginTop: 20}}>Description</h4> */}
-       
+    
         {ProjectBucket.map((image, i) => (  
            <img
-            // style={{flex: 1}}
+            style={{flex: 1}}
             src={require(`../../assets/projectbucket/${i}.jpg`)}
             alt={image.name}
             className="img-thumbnail mx-1"

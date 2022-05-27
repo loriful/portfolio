@@ -143,7 +143,7 @@ button[disabled] {
 }
 
 img {
-  max-width: 40%;
+  max-width: 48%;
 }
 
 img:hover {
@@ -327,4 +327,31 @@ a, span {
 
 .navActive {
   color: var(--secondary);
+}
+
+footer {
+  color: var(--light);
+  box-sizing: border-box;
+  margin: auto;
+  box-shadow: 0 0 1px whitesmoke;
+}
+
+
+.icon-container {
+  display: flex;
+  flex-wrap: nowrap;  
+  align-items: center;
+  margin: 0, 3200px;
+  justify-content: center;
+  
+}
+
+.icons {
+  margin-top: 30px;
+  margin-bottom: 0;
+  width: 7%;
+}
+
+.copy {
+  margin: 0, 0, 5px, 20px;
 }
