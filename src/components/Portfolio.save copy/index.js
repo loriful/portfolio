@@ -6,8 +6,9 @@ function Portfolio(props) {
   const { currentCategory } = props;
   return (
     <section>
-      <h1 id="portfolio">Portfolio</h1>
-      <ProjectList name={currentCategory.name} />
+      <h1 data-testid="h1tag">{currentCategory.name}</h1>
+      <p>{currentCategory.description}</p>
+      <ProjectList category={currentCategory.name} />
     </section>
   );
 }

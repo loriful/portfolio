@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const ProjectList = ({ category }) => {
+const ProjectList = ({ photo }) => {
+  
   const [photobucket] = useState([
     {
       name: "Let's Get Quizzical",
