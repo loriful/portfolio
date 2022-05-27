@@ -113,7 +113,6 @@ header {
   min-height: 160px;
   background-size: 100%;
   background-attachment: fixed;
-  /* background-position: 80%; */
   z-index: 9999;
   padding: 40px;
 }
@@ -145,6 +144,19 @@ button[disabled] {
 
 img {
   max-width: 40%;
+}
+
+img:hover {
+  opacity: 80%;
+}
+
+.portfolio h1 {
+  margin: 40px, 0, 40px, 0;
+}
+
+.portfolio h4 {
+  margin-top: 30px;
+  /* margin: 50px; */
 }
 
 span[role="img"] {
