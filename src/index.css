@@ -9,12 +9,12 @@ main {
   --secondary: #8c54ff;
   --tertiary: #B12704;
   --light: rgb(210, 209, 219);
-  --notsolight: rgb(173, 194, 233);
-  --dark: #1d2032;
-  --darker: #111111;
+  --notsolight: rgb(185, 199, 222);
+  --dark: #3d4369;
+  /* --darker: #111111; */
   /* --darker: #111111; */
   --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
+  --spacing-one: calc(1rem * 0.5); 
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 
@@ -109,15 +109,17 @@ header {
   flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 00;
+  min-height: 160px;
   background-size: 100%;
   background-attachment: fixed;
   /* background-position: 80%; */
   z-index: 9999;
+  padding: 40px;
 }
 
 header a, span{
-  color: var(--notsolight);
+  color: var(--dark);
 }
 
 button {
@@ -142,7 +144,7 @@ button[disabled] {
 }
 
 img {
-  max-width: 100%;
+  max-width: 40%;
 }
 
 span[role="img"] {
@@ -306,7 +308,7 @@ a, span {
 	/* color: var(--primary); */
 	font-weight: 500;
 	/* padding: 2px 4px; */
-  margin-left:  10px;
+  margin-left:  10px;;
 	/* margin-right: 2px; */
 	
 }
