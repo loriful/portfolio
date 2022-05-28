@@ -2,8 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    
-    <footer>
+      <>
         <div className="icon-container">
           <div className="icons">
               <a href="https://www.linkedin.com/in/loritipton/" target="_blank" rel="noreferrer">
@@ -20,7 +19,7 @@ const Footer = () => {
       <div className="copy">
         &copy; 2022 by Tipton
       </div>
-    </footer>
+  </>
   );
 };
 

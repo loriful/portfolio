@@ -7,15 +7,7 @@ import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  // const [categories] = useState([ 
-  //   {
-  //     name: 'challenges',
-  //     description: 'Solo projects',
-  //   }
-  // ]);
-
-  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
+  
   const [contactSelected, setContactSelected] = useState(false);
 
   return (
@@ -23,9 +15,6 @@ function App() {
     <div>
       <header>
       <Nav
-        // categories={categories}
-        // setCurrentCategory={setCurrentCategory}
-        // currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
@@ -33,18 +22,17 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
+            <About></About>
             <Portfolio></Portfolio>
             <Resume></Resume>
-            <About></About>
           </>
         ) : (
             <ContactForm></ContactForm>
           )}
+          
       </main>
       <footer>
-          <>
             <Footer></Footer>
-          </>
       </footer>
     </div>
   );

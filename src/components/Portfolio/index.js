@@ -19,7 +19,7 @@ function Portfolio() {
       name: 'Food Blog',
       where: 'https://feed-your-camera.herokuapp.com/',
       github: 'https://github.com/adamvaughn/feed-the-camera',
-      description: 'Team Full Stack Project - HTML, CSS, Javascript, REST APIs, MVC Development, Handlebars'
+      description: 'Team Interactive Full Stack Project - HTML, CSS, Javascript, REST APIs, MVC Development, Handlebars'
     },
     {
       name: 'Note Taker',
@@ -42,40 +42,27 @@ function Portfolio() {
   ]);
 
     return (
-    <section className="portfolio" href="#portfolio" >
-  
-      <h1>Portfolio</h1>
-       <div className="flex-row">
-        <div className="container">
-        {/* <div class="image image-3">
-          <a href="https://loriful.github.io/bang-the-drum/" target="_blank">
-          <img src="./assets/images/proj1.png" alt="Screen shot of weather & history app"/></a>
-          <div class="img-txt">
-            <h3>Historical Weather</h3>
-            <h4>Team Project:  HTML, Bootstrap CSS, JavaScript, Third Party APIs<h4>
-          </div>
-        </div> */}
+        <section className="portfolio" href="#portfolio" >
+          <h1 id="portfolio">Portfolio</h1>
+          {ProjectBucket.map((project, i) => ( 
+            <div className="flex-row">
 
-          <h4>Project Description</h4>
-    
-        {ProjectBucket.map((image, i) => (  
-           <img
-            style={{flex: 1}}
-            src={require(`../../assets/projectbucket/${i}.jpg`)}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            href={image.where} target="_blank"
-            key={image.name} 
-            text={image.descripton}
-
-          />
+            <p>{project.description}</p>
+              <div className="git">
+                  <a href={project.github} target="_blank" rel="noreferrer">GitHub Repository</a>
+              </div>
+              <div className="image">
+                <a href={project.where} target="_blank" rel="noreferrer">
+                <img
+                  src={require(`../../assets/projectbucket/${i}.jpg`)}
+                  alt={project.name}
+                  key={project.name}
+                /></a>
+              </div>
+            </div>
           ))}
-  
-
-  </div>
-    </div>
-    </section>
-  );
-};
+        </section>
+    )    // return
+};    // end function
 
 export default Portfolio;
