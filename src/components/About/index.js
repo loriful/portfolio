@@ -5,7 +5,7 @@ function About() {
 
   return (
     <section className="my-5" >
-      <h1 id="about">Who am I?</h1>
+      <h1 id="about">About LA Tipton</h1>
       <img src={Headshot} style={{ width: "7%" }} alt="personal phote" />
       <div className="my-2">
         <p>
