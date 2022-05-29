@@ -42,29 +42,28 @@ function Portfolio() {
   ]);
 
     return (
-        <section className="portfolio" href="#portfolio" >
+        <section className="porftolio" href="#portfolio" >
           <h1 id="portfolio">Portfolio</h1>
           {ProjectBucket.map((project, i) => ( 
-            <div className="project-container">
-              <div>
-                <div className="description-container">
+           <div className="flex-row" >
+                <div className="flex-row" >
                     <p className="description">{project.description}</p>
-                    <div className="git-icon">
-                        <a href={project.github} target="_blank" rel="noreferrer">
-                        <img src={require(`../../assets/images/femalecodertocat.png`)} alt=""></img>
-                        </a>
-                    </div>
-                 </div>
-                      <div className="project-img">
-                        <a href={project.where} target="_blank" rel="noreferrer">
-                        <img
-                          src={require(`../../assets/projectbucket/${i}.jpg`)}
-                          alt={project.name}
-                          key={project.name}
-                        /></a>
-                      </div>
-              </div>
-           </div>
+                    {/* <div className="git-icon"> */}
+                    <a href={project.github} target="_blank" rel="noreferrer">
+                    <img className="git-icon" src={require(`../../assets/images/femalecodertocat.png`)} alt=""></img>
+                    </a>
+                </div>
+                <div className="proj-flex-row" >
+                  <a href={project.where} target="_blank" rel="noreferrer">
+                  <img
+                    className="project-img"
+                    src={require(`../../assets/projectbucket/${i}.jpg`)}
+                    alt={project.name}
+                    key={project.name}
+                  /></a>
+                  </div>
+              
+           </div>  
           ))}
         </section>
     )    // return
