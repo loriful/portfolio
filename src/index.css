@@ -48,6 +48,7 @@ h6 {
 h1 {
   font-size: 2.25rem;
   padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -163,33 +164,47 @@ img {
 }
 
 .project-container {
-  width: 60%;
+  padding: 0 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-card {
+  width: 400px;
+  padding-bottom: 22px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .description {
-  padding: 6px;
+  flex: 0;
+  flex-wrap: nowrap;
+  width: 400px;
+}
+
+.description p {
+  padding: 20px 0 10px 20px;
+  width: 400px;
 }
 
 .git-icon:hover {
   background-color: var(--primary);
-  border-radius: 1em;
+  border-radius: 9px;
 }
 
 .git-icon {
+  float: right;
+  margin: 0 30px 10px 0; 
   border-radius: 10em;
   background-color: var(--light);
   width: 40px;
 }
 
 .project-img {
-    opacity: 40%;
+    opacity: 60%;
+    width: 400px;
 }
 
 .project-img:hover {
@@ -240,13 +255,6 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.proj-flex-row {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 48%;
 }
 
 .mx-1 {
