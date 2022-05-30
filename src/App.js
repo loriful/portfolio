@@ -12,7 +12,7 @@ function App() {
 
   return (
   
-    <div>
+    <>
       <header>
       <Nav
         contactSelected={contactSelected}
@@ -34,7 +34,7 @@ function App() {
       <footer>
             <Footer></Footer>
       </footer>
-    </div>
+    </>
   );
 }
 

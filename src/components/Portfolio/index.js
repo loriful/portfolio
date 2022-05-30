@@ -42,30 +42,27 @@ function Portfolio() {
   ]);
 
     return (
-        <section className="porftolio" href="#portfolio" >
+        <div className="portfolio" href="#portfolio" >
           <h1 id="portfolio">Portfolio</h1>
+          <section className="project-container">
           {ProjectBucket.map((project, i) => ( 
-           <div className="flex-row" >
-                <div className="flex-row" >
-                    <p className="description">{project.description}</p>
-                    {/* <div className="git-icon"> */}
+           
+                <div className="project-card" >
+                    <h6 className="description" >{project.description}</h6>
                     <a href={project.github} target="_blank" rel="noreferrer">
                     <img className="git-icon" src={require(`../../assets/images/femalecodertocat.png`)} alt=""></img>
                     </a>
-                </div>
-                <div className="proj-flex-row" >
-                  <a href={project.where} target="_blank" rel="noreferrer">
+                  <a className="project-img" href={project.where} target="_blank" rel="noreferrer">
                   <img
-                    className="project-img"
                     src={require(`../../assets/projectbucket/${i}.jpg`)}
                     alt={project.name}
                     key={project.name}
                   /></a>
-                  </div>
-              
-           </div>  
+             </div> 
+          
           ))}
-        </section>
+             </section>  
+        </div>
     )    // return
 };    // end function
 
